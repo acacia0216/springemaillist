@@ -2,16 +2,23 @@ package kr.co.bit.vo;
 
 public class EmailListVO {
     private int no;
-    private String lastName;
-    private String firstName;
+    private String last_Name;
+    private String first_Name;
     private String email;
 
     public EmailListVO() {
     }
 
-    public EmailListVO(String lastName, String firstName, String email) {
-        this.lastName = lastName;
-        this.firstName = firstName;
+    public EmailListVO(int no, String last_Name, String first_Name, String email) {
+        this.no = no;
+        this.last_Name = last_Name;
+        this.first_Name = first_Name;
+        this.email = email;
+    }
+
+    public EmailListVO(String last_Name, String first_Name, String email) {
+        this.last_Name = last_Name;
+        this.first_Name = first_Name;
         this.email = email;
     }
 
@@ -23,20 +30,20 @@ public class EmailListVO {
         this.no = no;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLast_Name() {
+        return last_Name;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLast_Name(String last_Name) {
+        this.last_Name = last_Name;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getFirst_Name() {
+        return first_Name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirst_Name(String first_Name) {
+        this.first_Name = first_Name;
     }
 
     public String getEmail() {
@@ -51,8 +58,8 @@ public class EmailListVO {
     public String toString() {
         return "EmailListVO{" +
                 "no=" + no +
-                ", lastName='" + lastName + '\'' +
-                ", firstName='" + firstName + '\'' +
+                ", last_Name='" + last_Name + '\'' +
+                ", first_Name='" + first_Name + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }

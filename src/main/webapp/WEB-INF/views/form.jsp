@@ -18,11 +18,11 @@
     <table>
         <tr>
             <td>Last name(성):</td>
-            <td><input type="text" name="lastName" value="" style="border:none"></td>
+            <td><input type="text" name="last_Name" value="" style="border:none"></td>
             <br></tr>
         <tr>
             <td>First name(이름):</td>
-            <td><input type="text" name="firstName" value="" style="border-radius:10px"></td>
+            <td><input type="text" name="first_Name" value="" style="border-radius:10px"></td>
         </tr>
         <br>
         <tr>

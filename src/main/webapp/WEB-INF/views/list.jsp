@@ -16,12 +16,12 @@
 <table border="1" cellpadding="5" cellspacing="2">
     <tr>
         <td align=right width="110">Last name:</td>
-        <td width="170">${emaillistVO.lastName}
+        <td width="170">${emaillistVO.last_Name}
         </td>
     </tr>
     <tr>
         <td align=right>First name:</td>
-        <td>${emaillistVO.firstName}
+        <td>${emaillistVO.first_Name}
         </td>
     </tr>
     <tr>

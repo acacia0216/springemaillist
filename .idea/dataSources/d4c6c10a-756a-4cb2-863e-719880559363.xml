@@ -6,9 +6,9 @@
     </root>
     <schema id="2" parent="1" name="WEBDB">
       <ObjectId>48</ObjectId>
-      <IntrospectionTimestamp>2018-04-24.20:00:56</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-04-25.23:39:23</IntrospectionTimestamp>
       <CreatedTimestamp>2018-04-19.06:11:07</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-24.20:00:56</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-04-25.23:39:23</ModifiedTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -107,7 +107,7 @@
     <table id="26" parent="2" name="EMAILLIST">
       <ObjectId>20254</ObjectId>
       <CreatedTimestamp>2018-04-24.19:57:13</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-24.20:00:56</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-04-25.23:39:23</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <table id="27" parent="2" name="GUESTBOOK">
@@ -180,6 +180,8 @@
     <column id="39" parent="26" name="EMAIL">
       <Position>2</Position>
       <DataType>VARCHAR2(100 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>NULL </DefaultExpression>
     </column>
     <column id="40" parent="26" name="LAST_NAME">
       <Position>3</Position>
@@ -215,19 +217,19 @@
       <Position>2</Position>
       <DataType>VARCHAR2(100 byte)|0s</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>NULL </DefaultExpression>
+      <DefaultExpression>NULL</DefaultExpression>
     </column>
     <column id="46" parent="27" name="PASSWORD">
       <Position>3</Position>
       <DataType>VARCHAR2(100 byte)|0s</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>NULL </DefaultExpression>
+      <DefaultExpression>NULL</DefaultExpression>
     </column>
     <column id="47" parent="27" name="CONTENT">
       <Position>4</Position>
       <DataType>VARCHAR2(2000 byte)|0s</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>NULL </DefaultExpression>
+      <DefaultExpression>NULL</DefaultExpression>
     </column>
     <column id="48" parent="27" name="REG_DATE">
       <Position>5</Position>

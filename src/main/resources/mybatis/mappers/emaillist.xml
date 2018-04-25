@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="emaillist">
+
+    <!-- 쿼리문 작성 -->
+
+    <select id="list" resultType="kr.co.bit.vo.EmailListVO">
+    <![CDATA[
+        select * from EMAILLIST order by no desc
+        ]]>
+</select>
+
+    <insert id="insert" parameterType="kr.co.bit.vo.EmailListVO">
+        <![CDATA[insert into EMAILLIST
+        values (SEQ_EMAILLIST_NO.nextval,
+        #{email},
+        #{last_Name},
+        #{first_Name})
+        ]]>
+    </insert>
+
+    <!--<update id="식별자" parameterType="기본자료형 또는 vo">-->
+    <!--</update>-->
+
+    <!--<delete id="식별자" parameterType="기본자료형 또는 vo">-->
+    <!--</delete>-->
+
+
+</mapper>

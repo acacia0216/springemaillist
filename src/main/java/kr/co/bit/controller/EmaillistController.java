@@ -1,6 +1,6 @@
 package kr.co.bit.controller;
 
-import kr.co.bit.dao.EmailListDao;
+import kr.co.bit.dao.EmaillistDAO;
 import kr.co.bit.vo.EmailListVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,7 +15,7 @@ import java.util.List;
 public class EmaillistController {
 
     @Autowired//자동으로 연결
-    private EmailListDao emailListDao;
+    private EmaillistDAO emailListDao;
 
     @RequestMapping(value = "/form", method = RequestMethod.GET)
     public String form(){
